@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YLVZ2MZGR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9YLVZ2MZGR');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://localhost:5000/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nav-style.css">
+    <link rel="stylesheet" href="./home-css/welcome.css">
+    <link rel="stylesheet" href="./home-css/formations.css">
+    <link rel="stylesheet" href="./home-css/interactif.css">
+    <link rel="stylesheet" href="./home-css/chiffres.css">
+    <link rel="stylesheet" href="./css/footer-style.css">
+    <title>MEDELI FORMATION - formations eligibles au CPF</title>
+</head>
+
+<body>
+    <!-- HEADER NAV -->
+    <header>
+        <!-- BLUE BAR TOP -->
+        <div id="topBar">
+            <div id="leftTopBar">
+                <a href="tel:+33972012600"><span><img height="16px" src="./imgs/tel.svg" alt="icon telephone"></span>
+                    <span>09 72 01 26 00</span> </a>
+                <a href="mailto:contact@medeli.fr"><span> <img src="./imgs/mail.svg" alt="icon mail"> </span>
+                    <span>contact@medeli.fr</span></a>
+            </div>
+            <div id="rightTopBar">
+                <a id="inscriptionAll" href="/inscription">INSCRIPTION</a>
+                <a id="conexComputer" href="https://corpo2.eduperformance.com/default_fr.asp"
+                    target="_blank">CONNEXION</a>
+                <a id="conexMobile" href="https://corpo2.eduperformance.com/client?client=medeli"
+                    target="_blank">CONNEXION</a>
+            </div>
+        </div>
+        <!-- WHITE BAR NAV -->
+        <div id="navigationBar">
+            <a href="/">
+                <div id="medeliLogoNav"> <img height="65px" width="auto" src="./imgs/logo-medeli2.svg"
+                        alt="logo medeli"></div>
+            </a>
+            <div id="mobileNav" onclick="openNav()"><img id="imgMobileNav" src="./imgs/icon-nav.svg" alt="nav icon"
+                    height="25px"></div>
+            <nav class="navClose" id="navigation">
+                <li id="navList">
+                    <ul id="pageHere">
+                        <a href="/">
+                            <div>ACCUEIL</div>
+                            <div class="videNav"><img width="70px" src="./imgs/souligne-nav.svg" alt="underline"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/catalogue">
+                            <div>CATALOGUE</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/financement">
+                            <div>FINANCEMENTS</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/aide">
+                            <div>BESOIN D'AIDE ?</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/contact">
+                            <div>CONTACT</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                </li>
+            </nav>
+            <div id="dlLogoNav"><img height="60px" width="auto" src="./imgs/logo_datadock.png" alt="logo datadock">
+            </div>
+        </div>
+    </header>
+
+    <!-- WELCOME PAGE -->
+    <div id="imgBI"></div>
+    <section id="welcome">
+        <div id="hoverWelcome">
+            <div id="welcomeEmpty"></div>
+            <div id="welcomeText">
+                <h1 id="wText1"><img src="./home-imgs/welcome-logo.svg" alt="MEDELI FORMATION"></h1>
+                <h2 id="wText2">LA REFERENCE DE LA FORMATION E-LEARNING</h2>
+                <h2 id="wText3">100% PRIS EN CHARGE PAR LE CPF</h2>
+            </div>
+            <div id="welcomeLogos">
+                <div class="welcomeLogosI" data-aos="fade-down" data-aos-delay="100">
+                    <div><img height="80px" src="./home-imgs/icon-cpf.svg" alt="financement CPF"></div>
+                    <div>FINANCEMENT<br>CPF</div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="200">
+                    <div><img height="80px" src="./home-imgs/icon-elearning.svg" alt="e-learning"></div>
+                    <div>E-LEARNING<br>DE QUALITE</div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="300">
+                    <div><img height="80px" src="./home-imgs/icon-certificat.svg" alt="certifications"></div>
+                    <div>CERTIFICATION<br>FIN DE PARCOURS</div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="400">
+                    <div><img height="80px" src="./home-imgs/icon-linguistique.svg" alt="formations linguistique"></div>
+                    <div>FORMATION<br>LINGUISTIQUE</div>
+                </div>
+                <div data-aos="fade-down" data-aos-delay="500">
+                    <div><img height="80px" src="./home-imgs/icon-bureautique.svg" alt="formations bureautique"></div>
+                    <div>FORMATION<br>BUREAUTIQUE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bcWhite">
+        <!-- FORMATIONS -->
+        <section id="formation">
+            <div class="linguistiqueBureautique closeLB" id="divLinguistique">
+                <h3>NOS FORMATIONS LINGUISTIQUES</h3>
+                <div class="allFormationsDiv" id="linguistiques">
+                    <!-- ANGLAIS -->
+                    <a href="/inscription?formation=anglais" class="formationDiv" id="fomationAnglais">
+                        <div class="formationDivTop">
+                            <img src="./home-imgs/formations/drapeau-anglais.svg" alt="drapeau anglais">
+                            <p>do you speak english ?</p>
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>APPRENDRE L'ANGLAIS</h3>
+                        </div>
+                    </a>
+                    <!-- FRANCAIS -->
+                    <a href="/inscription?formation=francais" class="formationDiv" id="fomationFrancais">
+                        <div class="formationDivTop">
+                            <img src="./home-imgs/formations/drapeau-francais.svg" alt="drapeau francais">
+                            <p>parlez vous le francais ?</p>
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>APPRENDRE LE FRANCAIS</h3>
+                        </div>
+                    </a>
+                    <!-- ESPAGNOL -->
+                    <a href="/inscription?formation=espagnol" class="formationDiv" id="fomationEspagnol">
+                        <div class="formationDivTop">
+                            <img src="./home-imgs/formations/drapeau-espagnol.svg" alt="drapeau espagnol">
+                            <p>hablas español ?</p>
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>APPRENDRE L'ESPAGNOL</h3>
+                        </div>
+                    </a>
+                    <!-- ITALIEN -->
+                    <a href="/inscription?formation=italien" class="formationDiv" id="fomationItalien">
+                        <div class="formationDivTop">
+                            <img src="./home-imgs/formations/drapeau-italien.svg" alt="drapeau italien">
+                            <p>parli italiano ?</p>
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>APPRENDRE L'ITALIEN</h3>
+                        </div>
+                    </a>
+                    <!-- ALLEMAND -->
+                    <a href="/inscription?formation=allemand" class="formationDiv" id="fomationAllemand">
+                        <div class="formationDivTop">
+                            <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p>
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>APPRENDRE L'ALLEMAND</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="voirPlus" id="voirPlusL" onclick="openFormations(0)">
+                    <div id="vp">
+                        <p>VOIR PLUS ▼</p>
+                    </div>
+                    <div id="vm">
+                        <p>VOIR MOINS ▲</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linguistiqueBureautique closeLB" id="divBureautique">
+                <h3>NOS FORMATIONS BUREAUTIQUES</h3>
+                <div class="allFormationsDiv" id="linguistiques">
+                    <!-- WORD -->
+                    <a href="/inscription?formation=word" class="formationDiv" id="fomationWord">
+                        <div class="formationDivTop">
+                            <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>MAITRISER WORD</h3>
+                        </div>
+                    </a>
+                    <!-- EXCEL -->
+                    <a href="/inscription?formation=excel" class="formationDiv" id="fomationExcel">
+                        <div class="formationDivTop">
+                            <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>MAITRISER EXCEL</h3>
+                        </div>
+                    </a>
+                    <!-- OUTLOOK -->
+                    <a href="/inscription?formation=outlook" class="formationDiv" id="fomationOutlook">
+                        <div class="formationDivTop">
+                            <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>MAITRISER OUTLOOK</h3>
+                        </div>
+                    </a>
+                    <!-- POWER POINT -->
+                    <a href="/inscription?formation=powerpoint" class="formationDiv" id="fomationPowerPoint">
+                        <div class="formationDivTop">
+                            <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                        </div>
+                        <div class="formationDivBottom">
+                            <h3>MAITRISER POWER POINT</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="voirPlus" id="voirPlusB" onclick="openFormations(1)">
+                    <div id="vp">
+                        <p>VOIR PLUS ▼</p>
+                    </div>
+                    <div id="vm">
+                        <p>VOIR MOINS ▲</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LECONS INTERACTIVES -->
+        <section id="interactif">
+            <div id="interactifText">
+                <div id="hoverInteractifText">
+                    <br><br><br><br><br><br>
+                    <h2>DES LEÇONS INTERACTIVES DE QUALITÉ</h2>
+                </div>
+                <div id="adaptScreens">
+                    <div>
+                        <p>ETUDIER OU VOUS VOULEZ</p>
+                        <p>NOUS SOMMES COMPATIBLE TOUT ECRAN !</p>
+                        <br>
+                    </div>
+                    <div id="adptSImg">
+                        <img src="./home-imgs/adapt-media.png" alt="adapater aux ecran">
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </section>
+
+        <!-- CHIFFRES -->
+        <section id="chiffres">
+            <div id="hoverChiffres">
+                <h2>MEDELI C'EST AUSSI</h2>
+                <div id="flexChiffres" data-aos="fade-down">
+                    <div class="unitChiffre">
+                        <!-- -->
+                        <div id="decNum1">0</div> <!-- id="num1" -->
+                        <p>APPRENANTS</p>
+                    </div>
+                    <div class="unitChiffre">
+                        <div id="decNum2"></div>
+                        <p>COURS DONNÉS</p>
+                    </div>
+                    <div class="unitChiffre">
+                        <div><span id="decNum3"></span> %</div>
+                        <p>DE SATISFACTION</p>
+                    </div>
+
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <!-- MON COMPTE FORMATION (css dans interactif.scss) -->
+        <section id="monCompteFormation">
+            <div>
+                <img src="./home-imgs/mcf.png" alt="mon compte formation">
+            </div>
+            <div id="mcfText">
+                <h2>AVEC MEDELI FORMATION VOTRE FORMATION EST 100% PRISE EN CHARGE PAR LE CPF</h2>
+                <p>N'hesitez pas a nous contacter pour profiter de notre accompagnement personnalisé.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><a href="https://medeli-formation.com">medeli-formation.com</a></p>
+            <p>© copyright 2020 - tous droits reserve</p>
+            <p>mentions legales</p>
+            <p id="rudy">powered by <a href="https://rudyattia.com" target="_blank">rudyattia.com</a></p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true
+        });
+    </script>
+    <script src="./js/nav.js"></script>
+    <script src="./home-js/formation.js"></script>
+    <script src="./home-js/chiffres.js"></script>
+</body>
+
+</html>

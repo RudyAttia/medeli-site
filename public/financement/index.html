@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YLVZ2MZGR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9YLVZ2MZGR');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav-style.css">
+    <link rel="stylesheet" href="../css/footer-style.css">
+    <link rel="stylesheet" href="./css/financement.css">
+    <title>MEDELI FORMATION - Financement</title>
+</head>
+
+<body>
+    <header>
+        <!-- BLUE BAR TOP -->
+        <div id="topBar">
+            <div id="leftTopBar">
+                <a href="tel:+33972012600"><span><img height="16px" src="../imgs/tel.svg" alt="icon telephone"></span>
+                    <span>09 72 01 26 00</span> </a>
+                <a href="mailto:contact@medeli.fr"><span> <img src="../imgs/mail.svg" alt="icon mail"> </span>
+                    <span>contact@medeli.fr</span></a>
+            </div>
+            <div id="rightTopBar">
+                <a id="inscriptionAll" href="/inscription">INSCRIPTION</a>
+                <a id="conexComputer" href="https://corpo2.eduperformance.com/default_fr.asp" target="_blank">CONNEXION</a>
+                <a id="conexMobile" href="https://corpo2.eduperformance.com/client?client=medeli" target="_blank">CONNEXION</a>
+            </div>
+        </div>
+        <!-- WHITE BAR NAV -->
+        <div id="navigationBar">
+            <a href="/">
+                <div id="medeliLogoNav"> <img height="65px" width="auto" src="../imgs/logo-medeli2.svg"
+                        alt="logo medeli"></div>
+            </a>
+            <div id="mobileNav" onclick="openNav()"><img id="imgMobileNav" src="../imgs/icon-nav.svg" alt="nav icon"
+                    height="25px"></div>
+            <nav class="navClose" id="navigation">
+                <li id="navList">
+                    <ul class="pageLink">
+                        <a href="/">
+                            <div>ACCUEIL</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/catalogue">
+                            <div>CATALOGUE</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul id="pageHere">
+                        <a href="/financement">
+                            <div>FINANCEMENTS</div>
+                            <div class="videNav"><img width="70px" src="../imgs/souligne-nav.svg" alt="underline"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/aide">
+                            <div>BESOIN D'AIDE ?</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/contact">
+                            <div>CONTACT</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                </li>
+            </nav>
+            <div id="dlLogoNav"><img height="60px" width="auto" src="../imgs/logo_datadock.png" alt="logo datadock">
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>MOYENS DE FINANCEMENT</h2>
+        <div id="choiceFinancenent">
+            <h3 id="btnCpf" class="SF selectFinancement" onclick="changeF(0)">FINANCEMENT CPF</h3>
+            <h3 id="btnPersonnel" class="SF dontSelectFinancement" onclick="changeF(1)">FINANCEMENT PERSONNEL</h3>
+        </div>
+        <div class="ongletFinancement" id="divCpf">
+            <h3>FINANCEMENT PAR LE COMPTE PROFESSIONNEL DE FORMATION (CPF)</h3>
+            <p>Le compte personnel de formation (CPF) permet d’acquérir des droits à la formation mobilisables tout au
+                long de sa vie professionnelle. Il a une vocation universelle et s’adresse à tous les actifs.</p>
+            <h3>Votre enveloppe CPF est renouvelée chaque année !</h4>
+                <p>Le Compte personnel de formation (CPF) s’adresse à :</p>
+                <ul>
+                    <li>toutes les personnes de 16 ans et plus sont titulaires d’un Compte personnel de formation (CPF)
+                    </li>
+                    <li>par dérogation, les jeunes de 15 ans, ayant signé un contrat d’apprentissage, sont également
+                        concernés ;</li>
+                    <li>le Compte personnel de formation (CPF) est fermé à la date à laquelle son titulaire à fait
+                        valoir l’ensemble de ses droits à la retraite.</li>
+                </ul>
+                <div id="sortesTravailleurs">
+                    <div class="travailleur">
+                        <h3>SALARIES</h3>
+                        <P>Pour 2020, les salariés ayant effectué une durée de travail supérieure ou égale à la moitié
+                            de la durée légale ou conventionnelle du travail sur l’ensemble de l’année 2019 acquièrent
+                            500 euros par an pour se former (plafonné à 5 000 euros).
+                            Pour les salariés peu ou pas qualifiés qui n’auraient pas atteint un niveau de formation
+                            sanctionné par un diplôme classé au niveau 3 (CAP, BEP), le montant annuel du crédit CPF est
+                            majoré à 800 euros (plafonné à 8 000 euros).
+                        </P>
+                        <div class="btnJeMinscrit" onclick="(()=>{window.location.href = '/inscription'})()">JE
+                            M'INSCRIS</div>
+                    </div>
+                    <div class="travailleur">
+                        <h3>SALARIES A TEMPS PARTIEL</h3>
+                        <P>
+                            Les salariés à temps partiel, dont le temps de travail est compris entre 50 % et 100 % du
+                            temps complet sur l’ensemble de l’année, bénéficient des mêmes rythmes d’acquisition des
+                            droits que les salariés à temps plein afin de renforcer leur accès à la formation et leur
+                            employabilité.
+                            Une proratisation est maintenue pour les salariés dont le temps partiel est inférieur à 50 %
+                            du temps complet.
+                        </P>
+                        <div class="btnJeMinscrit" onclick="(()=>{window.location.href = '/inscription'})()">JE
+                            M'INSCRIS</div>
+                    </div>
+                    <div class="travailleur">
+                        <h3>TRAVAILLEURS INDEPENDANTS</h3>
+                        <P>
+                            Le Compte personnel de formation (CPF) est alimenté à hauteur de 500 euros par année de
+                            travail, dans la limite d’un plafond de 5 000 euros au titre des activités professionnelles
+                            accomplies en 2019 . Pour 2018, le compte a été alimenté à hauteur de 360 euros au titre de
+                            2018 (24 heures X 15 €). Lorsque le travailleur indépendant n’a pas exercé son activité au
+                            titre d’une année entière, ses droits CPF sont calculés au prorata du temps d’exercice de
+                            l’activité au cours de l’année.
+                        </P>
+                        <div class="btnJeMinscrit" onclick="(()=>{window.location.href = '/inscription'})()">JE
+                            M'INSCRIS</div>
+                    </div>
+                    <div class="travailleur">
+                        <h3>PERSONNES EN RECHERCHE D'EMPLOI</h3>
+                        <P>Les droits à la formation acquis pendant l’activité sont attachés à la personne active. De ce
+                            fait, leur portabilité est assurée, y compris lorsque la personne change de statut, passant
+                            du statut de salarié à celui de personne en recherche d’emploi, qu’elle soit inscrite ou non
+                            à Pôle emploi. Ainsi, toutes les personnes en recherche d’emploi disposent d’un Compte
+                            personnel de formation (CPF) et conservent le montant en euro capitalisé antérieurement.
+                            Durant la période d’inactivité, le compte du demandeur d’emploi n’est toutefois pas
+                            alimenté.</P>
+                        <div class="btnJeMinscrit" onclick="(()=>{window.location.href = '/inscription'})()">JE
+                            M'INSCRIS</div>
+                    </div>
+                </div>
+        </div>
+        <div class="ongletFinancement" id="divPersonnel" style="display: none;">
+            <h3>FINANCEMENT PERSONNEL</h3>
+            <p>Vous avez consommé l’intégralité de votre enveloppe CPF ?</p>
+            <p>Optez pour le financement personnel afin de continuer à vous former à votre rythme en toute simplicité et
+                à moindre coût !</p>
+            <h3>Déduisez le coût de votre formation de vos recettes.</h3>
+            <p>
+                En effet, les frais de formations ont pour but de vous perfectionner dans votre exercice, vous pouvez
+                donc les comptabiliser dans vos charges.
+                Pour cela vous n’aurez qu’à joindre à votre expert-comptable l’attestation de formation et la facture
+                que nous vous aurons fait parvenir.
+            </p><br><br>
+            <div class="btnJeMinscrit" onclick="(()=>{window.location.href = '/inscription'})()">JE M'INSCRIS</div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://medeli-formation.com">medeli-formation.com</a></p>
+        <p>© copyright 2020 - tous droits reserve</p>
+        <p>mentions legales</p>
+        <p id="rudy">powered by <a href="https://rudyattia.com" target="_blank">rudyattia.com</a></p>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="./js/financement.js"></script>
+</body>
+
+</html>

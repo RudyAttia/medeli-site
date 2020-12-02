@@ -1,0 +1,105 @@
+@import '../css/declaration.scss';
+
+#imgBI{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    // background-color: rgb(224, 224, 224);
+    background-image: url("../home-imgs/bg-welc.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+#bcWhite{
+    background-color: white;
+    padding-top: 40px;
+}
+
+#welcome{
+    height: 100vh;
+
+    #hoverWelcome{
+        width: 100%;
+        height: 100%;
+        // background: linear-gradient(white,15%,rgba(255, 255, 255, 0.7),85%,white);
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #welcomeEmpty{
+        height: 140px;
+    }
+
+    #welcomeText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        #wText1{
+            img{
+                width: 80%;
+                max-width: 1000px;
+            }
+        }
+
+        #wText2{
+            color:$colorBleuFonce;
+            margin-top: 20px;
+        }
+        #wText3{
+            color:$colorVertHover;
+            margin-top: 20px;
+        }
+    }
+    #welcomeLogos{
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            text-align: center;
+            margin: 0 20px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        div:hover{
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        img{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (min-width:1081px){
+    #wText2{
+        font-size: 28px;
+    }
+    #wText3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    #welcomeLogos>div{
+        display: none;
+    }
+
+    #wText2{
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+    #wText3{
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+}

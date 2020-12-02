@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 180px;
+}
+
+h2 {
+  background-color: #d3eafa;
+  color: #20AEE9;
+  height: 45px;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#choiceFinancenent {
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+#choiceFinancenent .SF {
+  background-color: #b6b6b6;
+  height: 35px;
+  border-radius: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+#choiceFinancenent .dontSelectFinancement:hover {
+  background-color: #919191;
+}
+
+#choiceFinancenent #btnCpf.selectFinancement {
+  background-color: #20AEE9;
+}
+
+#choiceFinancenent #btnPersonnel.selectFinancement {
+  background-color: #20AEE9;
+}
+
+.ongletFinancement {
+  max-width: 1400px;
+  min-height: 600px;
+  background-color: #d3eafa;
+  margin: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  border-radius: 20px;
+}
+
+.ongletFinancement h3 {
+  font-size: 23px;
+  max-width: 600px;
+  text-align: center;
+  line-height: 35px;
+  color: #2E518D;
+  margin: 20px 0;
+}
+
+.ongletFinancement #sortesTravailleurs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ongletFinancement #sortesTravailleurs .travailleur {
+  background-color: white;
+  border-radius: 40px;
+  border: 1px gray solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ongletFinancement .btnJeMinscrit {
+  background-color: #A8CA5A;
+  color: white;
+  padding: 8px 30px 5px 30px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.ongletFinancement .btnJeMinscrit:hover {
+  background-color: #93bd31;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1081px) {
+  .SF {
+    width: 50%;
+  }
+  #btnCpf.selectFinancement {
+    -webkit-transform: scale(1.1, 1.1) translateX(3%);
+            transform: scale(1.1, 1.1) translateX(3%);
+  }
+  #btnPersonnel.selectFinancement {
+    -webkit-transform: scale(1.1, 1.1) translateX(-3%);
+            transform: scale(1.1, 1.1) translateX(-3%);
+  }
+  .ongletFinancement {
+    width: 80%;
+  }
+  .ongletFinancement p, .ongletFinancement ul {
+    width: 80%;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .ongletFinancement h3 {
+    font-size: 23px;
+  }
+  .ongletFinancement li {
+    margin: 10px 40px;
+  }
+  #sortesTravailleurs {
+    width: 90%;
+  }
+  #sortesTravailleurs .travailleur {
+    width: 45%;
+    margin: 15px;
+  }
+  #sortesTravailleurs .travailleur h3 {
+    width: 90%;
+  }
+  #sortesTravailleurs .travailleur P {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #choiceFinancenent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .SF {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ongletFinancement {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ongletFinancement p, .ongletFinancement ul {
+    width: 90%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .ongletFinancement h3 {
+    font-size: 20px;
+  }
+  .ongletFinancement li {
+    margin: 10px 20px;
+  }
+  #sortesTravailleurs {
+    width: 95%;
+  }
+  #sortesTravailleurs .travailleur {
+    width: 100%;
+    margin: 10px;
+  }
+  #sortesTravailleurs .travailleur h3 {
+    width: 90%;
+  }
+  #sortesTravailleurs .travailleur P {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=financement.css.map */

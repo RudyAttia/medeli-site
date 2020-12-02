@@ -1,0 +1,128 @@
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 180px;
+}
+
+h2 {
+  background-color: #d3eafa;
+  color: #20AEE9;
+  height: 45px;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq {
+  max-width: 1000px;
+  background-color: #d3eafa;
+  border-radius: 40px;
+}
+
+.faq h3 {
+  padding: 0 0 20px 0;
+  color: #2E518D;
+  text-decoration: underline;
+}
+
+.faq h4 {
+  padding: 15px 0;
+  color: #2E518D;
+}
+
+.openClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.ocClose .articleClose {
+  display: none;
+}
+
+.ocClose .moins {
+  display: none;
+}
+
+.ocClose h4 {
+  color: #666666;
+}
+
+.ocClose:hover {
+  background-color: #c3e5fc;
+  cursor: pointer;
+}
+
+.ocOpen .plus {
+  display: none;
+}
+
+.ocOpen .moins {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1081px) {
+  .faq {
+    width: 80%;
+    margin: 40px auto;
+    padding: 50px 80px;
+  }
+  .faq h3 {
+    font-size: 32px;
+  }
+  .faq h4 {
+    font-size: 28px;
+  }
+  .faq p, .faq li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .faq li {
+    margin-left: 40px;
+  }
+  .ocClose h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #qf {
+    display: none;
+  }
+  .faq {
+    width: 90%;
+    margin: 40px auto;
+    padding: 50px 5%;
+  }
+  .faq h3 {
+    font-size: 25px;
+  }
+  .faq h4 {
+    font-size: 20px;
+  }
+  .faq p, .faq li {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .faq li {
+    margin-left: 20px;
+  }
+  .ocClose h4 {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=aide.css.map */

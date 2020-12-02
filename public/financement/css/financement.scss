@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import '../../css/declaration.scss';
+
+section{
+    padding-top: 180px;
+}
+h2{
+    background-color: $colorBleuTresClaire;
+    color: $colorBleuClaire;
+    height: 45px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choiceFinancenent{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    .SF{
+        background-color: rgb(182, 182, 182);
+        height: 35px;
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .dontSelectFinancement:hover{
+        background-color: rgb(145, 145, 145);
+    }
+    #btnCpf.selectFinancement{
+        background-color: $colorBleuClaire;
+    }
+    #btnPersonnel.selectFinancement{
+        background-color: $colorBleuClaire;
+    }
+}
+.ongletFinancement{
+    max-width: 1400px;
+    min-height: 600px;
+    background-color: $colorBleuTresClaire;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    border-radius: 20px;
+
+    h3{
+        font-size: 23px;
+        max-width: 600px;
+        text-align: center;
+        line-height: 35px;
+        color: $colorBleuFonce;
+        margin: 20px 0 ;
+    }
+    #sortesTravailleurs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .travailleur{
+            background-color: white;
+            border-radius: 40px;
+            border: 1px gray solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .btnJeMinscrit{
+        background-color: $colorVert;
+        color: white;
+        padding: 8px 30px 5px 30px;
+        margin: 15px 0;
+        border-radius: 10px;
+    }
+    .btnJeMinscrit:hover{
+        background-color: $colorVertHover;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:1081px){
+    
+    .SF{
+        width: 50%;
+    }
+
+    #btnCpf.selectFinancement{
+        transform: scale(1.1,1.1) translateX(3%);
+    }
+    #btnPersonnel.selectFinancement{
+        transform: scale(1.1,1.1) translateX(-3%);
+    }
+
+    .ongletFinancement{
+        width: 80%;
+
+        p, ul{
+            width: 80%;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 23px;
+        }
+        li{
+            margin: 10px 40px;
+        }
+    }
+    #sortesTravailleurs{
+        width: 90%;
+        .travailleur{
+            width: 45%;
+            margin: 15px;
+            h3{
+                width: 90%;
+            }
+            P{
+                font-size: 15px; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1080px){
+    #choiceFinancenent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .SF{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ongletFinancement{
+        width: 90%;
+        padding: 0 5%;
+
+        p, ul{
+            width: 90%;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        li{
+            margin: 10px 20px;
+        }
+    }
+    #sortesTravailleurs{
+        width: 95%;
+        .travailleur{
+            width: 100%;
+            margin: 10px;
+            h3{
+                width: 90%;
+            }
+            P{
+                font-size: 14px; 
+            }
+        }
+    }
+}

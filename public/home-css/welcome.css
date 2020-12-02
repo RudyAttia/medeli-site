@@ -1,0 +1,130 @@
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#imgBI {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-image: url("../home-imgs/bg-welc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#bcWhite {
+  background-color: white;
+  padding-top: 40px;
+}
+
+#welcome {
+  height: 100vh;
+}
+
+#welcome #hoverWelcome {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#welcome #welcomeEmpty {
+  height: 140px;
+}
+
+#welcome #welcomeText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#welcome #welcomeText #wText1 img {
+  width: 80%;
+  max-width: 1000px;
+}
+
+#welcome #welcomeText #wText2 {
+  color: #2E518D;
+  margin-top: 20px;
+}
+
+#welcome #welcomeText #wText3 {
+  color: #93bd31;
+  margin-top: 20px;
+}
+
+#welcome #welcomeLogos {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#welcome #welcomeLogos div {
+  text-align: center;
+  margin: 0 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#welcome #welcomeLogos div:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#welcome #welcomeLogos img {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1081px) {
+  #wText2 {
+    font-size: 28px;
+  }
+  #wText3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #welcomeLogos > div {
+    display: none;
+  }
+  #wText2 {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+  #wText3 {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+}
+/*# sourceMappingURL=welcome.css.map */

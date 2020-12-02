@@ -1,0 +1,126 @@
+// @property --num1 {
+//     syntax: "<integer>";
+//     initial-value: 0;
+//     inherits: false;
+// }
+// @property --num2 {
+//     syntax: "<integer>";
+//     initial-value: 0;
+//     inherits: false;
+// }
+// @property --num3 {
+//     syntax: "<integer>";
+//     initial-value: 0;
+//     inherits: false;
+// }
+#chiffres{
+    min-height: 300px;
+    background-image: url('../home-imgs/bi-chiffres.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
+#hoverChiffres{
+  min-height: 300px;
+    height: 100%;
+    background-color: rgba(46, 81, 141,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flexChiffres{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 120px;
+    flex-wrap: wrap;
+
+    .unitChiffre{
+        width: 25%;
+        min-width: 200px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        div{
+            font-size: 60px;
+        }
+        P{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:1081px){
+  #hoverChiffres{
+      h2{
+          color: white;
+          font-size: 32px;
+          padding: 30px 0 0 90px;
+      }
+  }
+}
+@media screen and (max-width:1080px){
+  #hoverChiffres{
+    h2{
+        color: white;
+        font-size: 25px;
+        padding: 30px 0 0 0px;
+        text-align: center;
+    }
+  }
+}
+
+// #num1 {
+//     animation: counter1 4s ease-in-out forwards;
+//     counter-reset: num var(--num1);
+//   }
+// #num1::after {
+//     content: counter(num);
+// }
+  
+// @keyframes counter1 {
+//     from {
+//       --num1: 0;
+//     }
+//     to {
+//       --num1: 15774;
+//     }
+// }
+// #num2 {
+//     animation: counter2 4s ease-in-out forwards;
+//     counter-reset: num var(--num2);
+//   }
+// #num2::after {
+//     content: counter(num);
+// }
+  
+// @keyframes counter2 {
+//     from {
+//       --num2: 0;
+//     }
+//     to {
+//       --num2: 23861;
+//     }
+// }
+
+// #num3 {
+//     animation: counter3 4s ease-in-out forwards;
+//     counter-reset: num var(--num3);
+//   }
+// #num3::after {
+//     content: counter(num);
+// }
+  
+// @keyframes counter3 {
+//     from {
+//       --num3: 0;
+//     }
+//     to {
+//       --num3: 98;
+//     }
+// }

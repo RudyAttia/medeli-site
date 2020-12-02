@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YLVZ2MZGR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9YLVZ2MZGR');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav-style.css">
+    <link rel="stylesheet" href="../css/footer-style.css">
+    <link rel="stylesheet" href="./css/catalogue.css">
+    <title>MEDELI FORMATION - Catalogue</title>
+</head>
+
+<body>
+    <header>
+        <!-- BLUE BAR TOP -->
+        <div id="topBar">
+            <div id="leftTopBar">
+                <a href="tel:+33972012600"><span><img height="16px" src="../imgs/tel.svg" alt="icon telephone"></span>
+                    <span>09 72 01 26 00</span> </a>
+                <a href="mailto:contact@medeli.fr"><span> <img src="../imgs/mail.svg" alt="icon mail"> </span>
+                    <span>contact@medeli.fr</span></a>
+            </div>
+            <div id="rightTopBar">
+                <a id="inscriptionAll" href="/inscription">INSCRIPTION</a>
+                <a id="conexComputer" href="https://corpo2.eduperformance.com/default_fr.asp" target="_blank">CONNEXION</a>
+                <a id="conexMobile" href="https://corpo2.eduperformance.com/client?client=medeli" target="_blank">CONNEXION</a>
+            </div>
+        </div>
+        <!-- WHITE BAR NAV -->
+        <div id="navigationBar">
+            <a href="/">
+                <div id="medeliLogoNav"> <img height="65px" width="auto" src="../imgs/logo-medeli2.svg"
+                        alt="logo medeli"></div>
+            </a>
+            <div id="mobileNav" onclick="openNav()"><img id="imgMobileNav" src="../imgs/icon-nav.svg" alt="nav icon"
+                    height="25px"></div>
+            <nav class="navClose" id="navigation">
+                <li id="navList">
+                    <ul class="pageLink">
+                        <a href="/">
+                            <div>ACCUEIL</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul id="pageHere">
+                        <a href="/catalogue">
+                            <div>CATALOGUE</div>
+                            <div class="videNav"><img width="70px" src="../imgs/souligne-nav.svg" alt="underline"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/financement">
+                            <div>FINANCEMENTS</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/aide">
+                            <div>BESOIN D'AIDE ?</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                    <ul class="pageLink">
+                        <a href="/contact">
+                            <div>CONTACT</div>
+                            <div class="videNav"></div>
+                        </a>
+                    </ul>
+                </li>
+            </nav>
+            <div id="dlLogoNav"><img height="60px" width="auto" src="../imgs/logo_datadock.png" alt="logo datadock">
+            </div>
+        </div>
+    </header>
+
+    <!-- FORMATIONS -->
+    <section id="formation">
+        <h2>NOTRE CATALOGUE</h2>
+        <div class="linguistiqueBureautique closeLB" id="divLinguistique">
+            <h3>NOS FORMATIONS LINGUISTIQUE</h3>
+            <div class="allFormationsDiv" id="linguistiques">
+                <!-- ANGLAIS -->
+                <a href="/inscription?formation=anglais" class="formationDiv" id="fomationAnglais">
+                    <div class="formationDivTop">
+                        <img src="../home-imgs/formations/drapeau-anglais.svg" alt="drapeau anglais">
+                        <p>do you speak english ?</p>
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE L'ANGLAIS</h3>
+                    </div>
+                </a>
+                <!-- FRANCAIS -->
+                <a href="/inscription?formation=francais" class="formationDiv" id="fomationFrancais">
+                    <div class="formationDivTop">
+                        <img src="../home-imgs/formations/drapeau-francais.svg" alt="drapeau francais">
+                        <p>parlez vous le francais ?</p>
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE LE FRANCAIS</h3>
+                    </div>
+                </a>
+                <!-- ESPAGNOL -->
+                <a href="/inscription?formation=espagnol" class="formationDiv" id="fomationEspagnol">
+                    <div class="formationDivTop">
+                        <img src="../home-imgs/formations/drapeau-espagnol.svg" alt="drapeau espagnol">
+                        <p>hablas español ?</p>
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE L'ESPAGNOL</h3>
+                    </div>
+                </a>
+                <!-- ITALIEN -->
+                <a href="/inscription?formation=italien" class="formationDiv" id="fomationItalien">
+                    <div class="formationDivTop">
+                        <img src="../home-imgs/formations/drapeau-italien.svg" alt="drapeau italien">
+                        <p>parli italiano ?</p>
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE L'ITALIEN</h3>
+                    </div>
+                </a>
+                <!-- ALLEMAND -->
+                <a href="/inscription?formation=allemand" class="formationDiv" id="fomationAllemand">
+                    <div class="formationDivTop">
+                        <img src="../home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                        <p>sprechen sie deutsch ?</p>
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE L'ALLEMAND</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="voirPlus" id="voirPlusL" onclick="openFormations(0)">
+                <div id="vp">
+                    <p>VOIR PLUS ▼</p>
+                </div>
+                <div id="vm">
+                    <p>VOIR MOINS ▲</p>
+                </div>
+            </div>
+        </div>
+        <div class="linguistiqueBureautique closeLB" id="divBureautique">
+            <h3>NOS FORMATIONS BUREAUTIQUE</h3>
+            <div class="allFormationsDiv" id="linguistiques">
+                <!-- WORD -->
+                <a href="/inscription?formation=word" class="formationDiv" id="fomationWord">
+                    <div class="formationDivTop">
+                        <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE WORD</h3>
+                    </div>
+                </a>
+                <!-- EXCEL -->
+                <a href="/inscription?formation=excel" class="formationDiv" id="fomationExcel">
+                    <div class="formationDivTop">
+                        <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE EXCEL</h3>
+                    </div>
+                </a>
+                <!-- OUTLOOK -->
+                <a href="/inscription?formation=outlook" class="formationDiv" id="fomationOutlook">
+                    <div class="formationDivTop">
+                        <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE OUTLOOK</h3>
+                    </div>
+                </a>
+                <!-- POWER POINT -->
+                <a href="/inscription?formation=powerpoint" class="formationDiv" id="fomationPowerPoint">
+                    <div class="formationDivTop">
+                        <!-- <img src="./home-imgs/formations/drapeau-allemand.svg" alt="drapeau allemand">
+                            <p>sprechen sie deutsch ?</p> -->
+                    </div>
+                    <div class="formationDivBottom">
+                        <h3>APPRENDRE POWER POINT</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="voirPlus" id="voirPlusB" onclick="openFormations(1)">
+                <div id="vp">
+                    <p>VOIR PLUS ▼</p>
+                </div>
+                <div id="vm">
+                    <p>VOIR MOINS ▲</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><a href="https://medeli-formation.com">medeli-formation.com</a></p>
+        <p>© copyright 2020 - tous droits reserve</p>
+        <p>mentions legales</p>
+        <p id="rudy">powered by <a href="https://rudyattia.com" target="_blank">rudyattia.com</a></p>
+    </footer>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+      </script> -->
+    <script src="../js/nav.js"></script>
+    <script src="../home-js/formation.js"></script>
+</body>
+
+</html>

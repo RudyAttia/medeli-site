@@ -1,0 +1,213 @@
+@import '../../css/declaration.scss';
+
+section{
+    padding-top: 180px;
+}
+h2{
+    background-color: $colorBleuTresClaire;
+    color: $colorBleuClaire;
+    height: 45px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linguistiqueBureautique{
+    background-color: $colorBleuTresClaire;
+    margin: 40px 0;
+    box-shadow: 0 0 6px rgba(128, 128, 128,0.5) inset;
+    position: relative;
+    border-bottom: 1px rgb(209, 209, 209) solid;
+    border-top: 1px rgb(209, 209, 209) solid;
+
+    h3{
+        height: 35px;
+        padding: 30px 0 0 30px;
+        color: $colorBleuFonce;
+    }
+
+    .allFormationsDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        #fomationAnglais{
+            background-image: url('../../home-imgs/formations/anglais.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationFrancais{
+            background-image: url('../../home-imgs/formations/francais.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationEspagnol{
+            background-image: url('../../home-imgs/formations/espagnol.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationItalien{
+            background-image: url('../../home-imgs/formations/italien.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationAllemand{
+            background-image: url('../../home-imgs/formations/allemand.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationWord{
+            background-image: url('../../home-imgs/formations/word.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationExcel{
+            background-image: url('../../home-imgs/formations/excel.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationOutlook{
+            background-image: url('../../home-imgs/formations/outlook.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #fomationPowerPoint{
+            background-image: url('../../home-imgs/formations/powerpoint.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .formationDiv{
+        height: 250px;
+        width: 400px;
+        // background-color: rgb(89, 105, 151);
+        margin: 20px;
+        box-shadow: 0 0 6px rgba(128, 128, 128,0.5);
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+
+        .formationDivTop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                border-radius: 0 0 20px 0;
+                height: 60px;
+                width: 120px;
+            }
+            p{
+                padding-right: 15px;
+                color: white;
+                text-shadow: 0 0 4px black;
+            }
+        }
+
+        .formationDivBottom{
+            margin-bottom: 15px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 10px;
+            color: $colorBleuFonce;
+        }
+    }
+
+    .formationDiv:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    // @keyframes hoverFormationDiv {
+    //     to{
+    //         transform: scale(1.1);
+    //     }
+    // }
+
+    .voirPlus{
+        height: 30px;
+        width: 100%;
+        background-color:rgba(255, 255, 255, 1);
+        // border-top: 1px lightgray solid;
+        border-bottom: 1px lightgray solid;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // box-shadow: 0 -1px 6px rgba(128, 128, 128,0.5) inset;
+
+        p{
+            text-align: center;
+        }
+    }
+    .voirPlus:hover{
+        cursor: pointer;
+        background-color:rgba(190, 220, 235, 1);
+        // color: rgb(255, 255, 255);
+    }
+}
+
+.closeLB{
+    height: 380px;
+
+    .allFormationsDiv{
+        height: 330px;
+    }
+    .voirPlus{
+        bottom: 30px;
+    }
+    #vp{
+        display: block;
+    }
+    #vm{
+        display: none;
+    }
+}
+
+.openLB{
+    height: auto;
+
+    .allFormationsDiv{
+        height: auto;
+    }
+    .voirPlus{
+        bottom: 0px;
+    }
+    #vp{
+        display: none;
+    }
+    #vm{
+        display: block;
+    }
+}
+
+@media all and (min-width: 1780px){
+    #voirPlusB{
+        display: none;
+    }
+}
+@media all and (min-width: 2220px){
+    #voirPlusL{
+        display: none;
+    }
+}
+

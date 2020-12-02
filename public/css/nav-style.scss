@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import './declaration.scss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: $colorGray;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+#topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorBleuFonce;
+    height: 40px;
+    color: white;
+
+    #leftTopBar{
+        margin-left: 30px;
+        a{
+            border: white 1px solid;
+            border-radius: 7px;
+            padding: 0px 10px;
+            display: flex;
+            height: 24px;
+            align-items: center;
+            margin-left: 30px;
+            img{
+                margin-right: 8px;
+                height: 15px;
+            }
+        }
+    }
+    #rightTopBar{
+        display: flex;
+        margin-right: 30px;
+        a{
+            background-color: $colorVert;
+            border-radius: 7px;
+            padding: 0px 15px;
+            height: 24px;
+            align-items: center;
+            margin-right: 30px;
+        }
+        #inscriptionAll{
+            display: flex;
+        }
+        a:hover{
+            background-color: $colorVertHover;
+        }
+    }
+}
+
+#navigationBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    box-shadow: rgba(128, 128, 128,0.4) 0px 2px 3px;
+    background-color: white;
+    nav li{
+        display: flex;
+        height: 100%;
+        #pageHere{
+            color: $colorBleuClaire;
+            cursor: pointer;
+        }
+        .pageLink:hover{
+            color: $colorBleuClaire;
+            cursor: pointer;
+            
+        }
+        ul{
+            margin: 0 15px;
+            height: 100%;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            // padding-top: 10px;
+            a{
+                height: 100%;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        .videNav{
+            height: 0px;
+            text-align: center;
+            
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 1081px){
+    #mobileNav{
+        display: none;
+    }
+    #conexMobile{
+        display: none;
+    }
+    #conexComputer{
+        display: flex;
+    }
+}
+@media screen and (max-width: 1080px)
+{
+    #conexMobile{
+        display: flex;
+    }
+    #conexComputer{
+        display: none;
+    }
+    #dlLogoNav{
+        display: none;
+    }
+    nav{
+        position: absolute;
+        width: 100%;
+        top: 160px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        li{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .videNav{
+                display: none;
+            }
+            a{
+                height: 60px !important;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .navClose{
+        display: none;
+    }
+    .navOpen{
+        display: flex;
+    }
+    #mobileNav{
+        display: block;
+    }
+}
+@media screen and (min-width: 816px){
+    #leftTopBar{
+        display: flex;
+    }
+}
+@media screen and (max-width: 815px){
+    #topBar{
+        justify-content: center;
+    }
+    #rightTopBar{
+        margin-left: 60px;
+    }
+    #leftTopBar{
+        display: none;
+    }
+}

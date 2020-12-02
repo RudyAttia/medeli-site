@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #666666;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2E518D;
+  height: 40px;
+  color: white;
+}
+
+#topBar #leftTopBar {
+  margin-left: 30px;
+}
+
+#topBar #leftTopBar a {
+  border: white 1px solid;
+  border-radius: 7px;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+#topBar #leftTopBar a img {
+  margin-right: 8px;
+  height: 15px;
+}
+
+#topBar #rightTopBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
+#topBar #rightTopBar a {
+  background-color: #A8CA5A;
+  border-radius: 7px;
+  padding: 0px 15px;
+  height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+#topBar #rightTopBar #inscriptionAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#topBar #rightTopBar a:hover {
+  background-color: #93bd31;
+}
+
+#navigationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  -webkit-box-shadow: rgba(128, 128, 128, 0.4) 0px 2px 3px;
+          box-shadow: rgba(128, 128, 128, 0.4) 0px 2px 3px;
+  background-color: white;
+}
+
+#navigationBar nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#navigationBar nav li #pageHere {
+  color: #20AEE9;
+  cursor: pointer;
+}
+
+#navigationBar nav li .pageLink:hover {
+  color: #20AEE9;
+  cursor: pointer;
+}
+
+#navigationBar nav li ul {
+  margin: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navigationBar nav li ul a {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#navigationBar nav li .videNav {
+  height: 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1081px) {
+  #mobileNav {
+    display: none;
+  }
+  #conexMobile {
+    display: none;
+  }
+  #conexComputer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #conexMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #conexComputer {
+    display: none;
+  }
+  #dlLogoNav {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 160px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  nav li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav li .videNav {
+    display: none;
+  }
+  nav li a {
+    height: 60px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navClose {
+    display: none;
+  }
+  .navOpen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #mobileNav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 816px) {
+  #leftTopBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  #topBar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #rightTopBar {
+    margin-left: 60px;
+  }
+  #leftTopBar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav-style.css.map */

@@ -1,0 +1,265 @@
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 180px;
+}
+
+h2 {
+  background-color: #d3eafa;
+  color: #20AEE9;
+  height: 45px;
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linguistiqueBureautique {
+  background-color: #d3eafa;
+  margin: 40px 0;
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5) inset;
+          box-shadow: 0 0 6px rgba(128, 128, 128, 0.5) inset;
+  position: relative;
+  border-bottom: 1px #d1d1d1 solid;
+  border-top: 1px #d1d1d1 solid;
+}
+
+.linguistiqueBureautique h3 {
+  height: 35px;
+  padding: 30px 0 0 30px;
+  color: #2E518D;
+}
+
+.linguistiqueBureautique .allFormationsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationAnglais {
+  background-image: url("../../home-imgs/formations/anglais.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationFrancais {
+  background-image: url("../../home-imgs/formations/francais.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationEspagnol {
+  background-image: url("../../home-imgs/formations/espagnol.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationItalien {
+  background-image: url("../../home-imgs/formations/italien.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationAllemand {
+  background-image: url("../../home-imgs/formations/allemand.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationWord {
+  background-image: url("../../home-imgs/formations/word.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationExcel {
+  background-image: url("../../home-imgs/formations/excel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationOutlook {
+  background-image: url("../../home-imgs/formations/outlook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .allFormationsDiv #fomationPowerPoint {
+  background-image: url("../../home-imgs/formations/powerpoint.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linguistiqueBureautique .formationDiv {
+  height: 250px;
+  width: 400px;
+  margin: 20px;
+  -webkit-box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+          box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.linguistiqueBureautique .formationDiv .formationDivTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linguistiqueBureautique .formationDiv .formationDivTop img {
+  border-radius: 0 0 20px 0;
+  height: 60px;
+  width: 120px;
+}
+
+.linguistiqueBureautique .formationDiv .formationDivTop p {
+  padding-right: 15px;
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+
+.linguistiqueBureautique .formationDiv .formationDivBottom {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  color: #2E518D;
+}
+
+.linguistiqueBureautique .formationDiv:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.linguistiqueBureautique .voirPlus {
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px lightgray solid;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linguistiqueBureautique .voirPlus p {
+  text-align: center;
+}
+
+.linguistiqueBureautique .voirPlus:hover {
+  cursor: pointer;
+  background-color: #bedceb;
+}
+
+.closeLB {
+  height: 380px;
+}
+
+.closeLB .allFormationsDiv {
+  height: 330px;
+}
+
+.closeLB .voirPlus {
+  bottom: 30px;
+}
+
+.closeLB #vp {
+  display: block;
+}
+
+.closeLB #vm {
+  display: none;
+}
+
+.openLB {
+  height: auto;
+}
+
+.openLB .allFormationsDiv {
+  height: auto;
+}
+
+.openLB .voirPlus {
+  bottom: 0px;
+}
+
+.openLB #vp {
+  display: none;
+}
+
+.openLB #vm {
+  display: block;
+}
+
+@media all and (min-width: 1780px) {
+  #voirPlusB {
+    display: none;
+  }
+}
+
+@media all and (min-width: 2220px) {
+  #voirPlusL {
+    display: none;
+  }
+}
+/*# sourceMappingURL=catalogue.css.map */
